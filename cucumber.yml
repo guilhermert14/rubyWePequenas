@@ -1,0 +1,3 @@
+# default: --format progress --format json --out=reports\json\<%= Time.now.strftime("%Y%m%d-%H%M%S%L") %>ReportBuilder.json
+html_report: --format progress --format html --out=reports/html/<%= Time.now.strftime("%Y%m%d-%H%M%S%L") %>-report.html
+xml_report: --format progress --format junit --out=features_report.xml

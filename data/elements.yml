@@ -1,0 +1,144 @@
+############################ PADROES ##########################################
+
+botao_adicionar: a[id="btnAdicionarCarrinho"]
+
+########################## TELA VITRINE #######################################
+
+texto_buscar: input[id*=txtBusca]
+
+botao_buscar: button[id*="btnOK"]
+
+############################ TELA IDENTIFICACAO ###############################
+
+texto_email: input[id="Email"]
+texto_senha: input[id="Senha"]
+
+##################### TELA GARANTIA ###########################################
+
+botao_recusar_garantia: a[class="continue-button"]
+botao_concluir_compra: a[class=" bt btconcluir"]
+
+################### TELA ENDERECO #############################################
+
+botao_continuar_endereco: input[id="btSelecionarPagamento"]
+botao_continuar_login: input[id="btnClienteLogin"]
+
+####################### TELA GARANTIA #########################################
+
+campo_garantia: section[class="warranties"]
+
+######################## RADIO BUTTON #########################################
+
+radio_garantia: span[class="input-custom-circle"]
+radio_entrega: input[id=IdEntregaTipoSelecionado]
+
+####################### FORMA ENTREGA #########################################
+
+estado_retira: p[class="estado"]
+regiao_retira: p[class="regiao"]
+cidade_retira: p[class="cidade"]
+bairro_retira: p[class="bairro"]
+loja_retira: select[id="IdLojaFisicaSelecionado"]
+agenda_horario: select[id="IdPeriodoSelecionado"]
+
+#################### TELA FORMAS PAGAMENTO ###########################################
+el_um_cartao_credito:
+  classe: .credit
+  um_cartao_credito: Cartão de Crédito
+
+el_dois_cartoes_credito:
+  classe: .credit
+  dois_cartoes_credito: Cartão de Crédito
+
+el_boleto:
+  classe: .boleto
+  boleto: Boleto Bancário
+
+el_boleto_cartao:
+  classe: .credit
+  dois_cartoes_credito: Cartão de Crédito
+
+el_debito:
+  classe: .debit
+  debito_online: Débito Online
+
+el_paypal:
+  classe: a[title="Paypal"]
+  paypal: Paypal
+
+el_multicheque:
+  classe: .multi
+  multicheque: Multicheque/Multicash
+
+el_cartao_presente:
+  classe: .giftcard
+  cartao_presente: Cartão Presente
+
+el_masterpass:
+  classe: a[title="MasterPass"]
+  masterpass: Masterpass
+
+el_visa_checkout:
+  classe: .masterpass
+  visa_checkout: Visa Checkout
+
+el_redepay:
+  classe: .redepay
+redepay: Rede Pay
+
+cartao_um:
+  texto_num_cartao: .iCardNumber
+  texto_val_mes: .month
+  texto_val_ano: .year
+  texto_nome_titular: .iCardName
+  texto_cvv: .iCsc
+  texto_qtd_parcelas: .installmentQty
+  listParcelas: //select[@id='parcelamento-cartao-novo-1']
+
+campo_formas_pagamento: .paymentMethods
+
+botao_finalizar_compra: input[id="btFinalizarCompraResumo2"]
+###################### TELA DEBITO #############################################
+
+debito_itau: .grp.bancoItau.debitoBox
+debito_visa: .grp.visaEletron.debitoBox
+debito_maestro: .grp.maestro.debitoBox
+
+####################### TELA BOLETO ###########################################
+
+botao_finalizar_compra_boleto: input[id="btPagBoleto"]
+
+######################## TELA PAYPAL ##########################################
+
+botao_paypal: a[title="Paypal"]
+botao_finalizar_paypal: input[id="btPagPaypal"]
+
+####################### TELA MASTERPASS #######################################
+
+botao_masterpass: a[title="MasterPass"]
+
+######################## TELA CARTAO UM #######################################
+
+texto_qtd_parcelas: input[id="QtdeParcelas"]
+
+combo_forma_parcela: select[id="IdFormaPagamentoParcelamento"]
+
+botao_concluir_pagamento: button[id="btCredito"]
+botao_finalizar_compra_cartao: button[id="btCredito"]
+
+######################## TELA CARTAO_DOIS #####################################
+cartao_dois:
+  texto_num_cartao: .iCardNumber
+  texto_val_mes: .month
+  texto_val_ano: .year
+  texto_nome_titular: .iCardName
+  texto_cvv: .iCsc
+  texto_qtd_parcelas: .installmentQty
+
+botao_utilizar_dois_cartoes: a[class="bt bt2Cards"]
+
+texto_cartao_dois: input[id="NrCartao2"]
+texto_val_mes_dois: select[id="DtValidadeMes2"]
+texto_val_ano_dois: select[id="DtValidadeAno2"]
+texto_nome_cartao_dois: input[id="Nome2"]
+texto_cvv_dois: input[id="NrSeguranca2"]
